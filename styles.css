@@ -210,3 +210,25 @@ select:focus {
 #start-test-btn:hover {
     background-color: #0b6a0b;
 }
+
+#restart-btn {
+    background-color: #107c10;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#restart-btn:hover {
+    background-color: #0b6a0b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#restart-btn:active {
+    transform: translateY(1px);
+}
