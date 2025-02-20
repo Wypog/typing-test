@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Typing Speed Test</h1>
+    
+    <div id="difficulty">
+        <label>Difficulty:</label>
+        <select id="difficulty-select">
+            <option value="easy">Easy (120 seconds)</option>
+            <option value="medium">Medium (60 seconds)</option>
+            <option value="hard">Hard (30 seconds)</option>
+        </select>
+    </div>
+
+    <div id="timer">60</div>
+    <div class="controls">
+        <button id="start-test-btn">Start New Test</button>
+        <button id="pause-btn" style="display: none;">Pause Test</button>
+        <button id="unpause-btn" style="display: none;">Unpause Test</button>
+        <select id="word-count-select">
+            <option value="10">10 words</option>
+            <option value="25" selected>25 words</option>
+            <option value="50">50 words</option>
+            <option value="100">100 words</option>
+        </select>
+    </div>
+    <div id="target-text" tabindex="0"></div>
+    <div id="stats">
+        <div class="stat-box">
+            <h3>WPM</h3>
+            <div id="wpm">0</div>
+        </div>
+        <div class="stat-box">
+            <h3>Accuracy</h3>
+            <div id="accuracy">0%</div>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <h2>Game Over!</h2>
+        <p>Your final score: <span id="final-score">0</span> WPM</p>
+        <button id="restart-btn">Try Again</button>
+    </div>
+
+    <div id="high-scores">
+        <div class="high-scores-header">
+            <h2>High Scores</h2>
+            <button id="clear-scores-btn">Clear High Scores</button>
+        </div>
+        <ul id="high-scores-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
