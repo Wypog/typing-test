@@ -87,6 +87,7 @@ function handleTyping(e) {
     const currentChar = targetText[currentIndex];
     const charElement = targetTextElement.querySelector(`[data-index="${currentIndex}"]`);
     
+    // Add this section to update character classes
     if (typedChar === currentChar) {
         charElement.className = 'correct-char';
     } else {
