@@ -152,7 +152,7 @@ function displayHighScores() {
 
 function startTimer() {
     const difficulty = difficultySelect.value;
-    timer = difficulty === 'easy' ? 30 : difficulty === 'medium' ? 60 : 120;
+    timer = difficulty === 'easy' ? 120 : difficulty === 'medium' ? 60 : 30;
     timerElement.textContent = timer;
     
     if (gameInterval) {
@@ -160,7 +160,7 @@ function startTimer() {
     }
     
     gameInterval = setInterval(() => {
-        if (!isPaused) {  // Only countdown if not paused
+        if (!isPaused) {
             timer--;
             timerElement.textContent = timer;
             
